@@ -1,0 +1,25 @@
+
+
+
+  
+  <ul class="video-list">
+    <li class="video-item" *ngFor="let video of videos">
+      <div class="video-container">
+        <div class="thumbnail">
+          <a [href]="'https://www.youtube.com/watch?v=' + video.id.videoId" target="_blank">
+            <img [src]="video.snippet.thumbnails.high.url" alt="Video Thumbnail">
+          </a>
+        </div>
+        <div class="video-details">
+          <h3 class="video-title">{{ video.snippet.title }}</h3>
+          <p class="channel-title">{{ video.snippet.channelTitle }}</p>
+          <div class="video-actions">
+            <button class="subscribe-button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  
+
+  
