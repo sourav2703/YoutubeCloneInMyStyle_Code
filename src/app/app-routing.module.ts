@@ -9,6 +9,8 @@ const routes: Routes = [
   { path: 'about', component: AboutMeComponent },
   { path: 'contact', component: ContactMeComponent },
   { path: 'home', component: HomeComponent },
+  { path: '**', redirectTo: 'home' } // Wildcard route for handling incorrect URLs
+
 
 
   // Add more routes as needed

@@ -12,6 +12,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { HomeComponent } from './home/home.component';
     AboutMeComponent,
     ContactMeComponent,
     HomeComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

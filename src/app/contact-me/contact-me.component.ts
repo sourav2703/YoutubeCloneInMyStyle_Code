@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-me.component.css']
 })
 export class ContactMeComponent {
+  showPopupMessage: boolean = false;
 
+  showPopup() {
+    this.showPopupMessage = true;
+  }
 }

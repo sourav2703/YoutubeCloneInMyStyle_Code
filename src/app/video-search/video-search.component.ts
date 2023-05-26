@@ -20,8 +20,9 @@ export class VideoSearchComponent {
 
   searchVideos() {
     if (this.searchQuery.trim() !== '') {
-      const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${this.searchQuery}&type=video&maxResults=100&key=AIzaSyA2I1ffgLOfWLpD9dugs5O7hTQl9GXJEJs`;
+      const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${this.searchQuery}&type=video&maxResults=100&key=hs`;
       // const url = `https://www.googleapis.com/youtube/v3/search?key=YOUR_API_KEY&q=${this.searchQuery}&type=video&maxResults=10`;
+      // AIzaSyA2I1ffgLOfWLpD9dugs5O7hTQl9GXJEJs
 
       this.http.get(url).subscribe((res: any) => {
         this.videos = res.items;

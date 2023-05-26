@@ -23,7 +23,8 @@ export class HomeComponent implements OnInit{
 
   searchVideos() {
     
-      const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&chart=mostPopular&maxResults=50&key=AIzaSyA2I1ffgLOfWLpD9dugs5O7hTQl9GXJEJs`;
+      const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&chart=mostPopular&maxResults=50&key=hs`;
+      // AIzaSyA2I1ffgLOfWLpD9dugs5O7hTQl9GXJEJs
       // const url = `https://www.googleapis.com/youtube/v3/search?key=YOUR_API_KEY&q=${this.searchQuery}&type=video&maxResults=10`;
       // https://www.googleapis.com/youtube/v3/search?part=snippet&chart=mostPopular&maxResults=10&key=AIzaSyA2I1ffgLOfWLpD9dugs5O7hTQl9GXJEJs
 
